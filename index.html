@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techylon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  
+    <!-- INICIO Offcanvas -->
+    <div class="offcanvas offcanvas-start" id="idOffcanvas">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Techylon</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p><a href="#mision" >Mision</a></p>
+        <p><a href="#vision" >Vision</a></p>
+      </div>
+    </div>  
+    <!-- FIN  Offcanvas -->
+  <!-- Menu de navegacion inicio -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand " href="#">Techylon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">  <!-- Alineacion a la derecha -->
+          <li class="nav-item">
+            <a class="nav-link" href="#DocumentoPdf">ver pdf</a>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Menu de navegacion fin -->
+      <!-- CARRUSEL INICIO-->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner" style="max-height: 700px;">
+      <div class="carousel-item active">
+        <img src="img/img1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img5.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- FIN CARRUSEL -->
+
+
+    <!-- Inicio modal -->
+    <!-- Botón Video -->
+    <div class="container text-center mt-4  " id="DocumentoPdf">
+      <button type="button" class="btn btn-primary btn-lg bg-success" data-bs-toggle="modal" data-bs-target="#video">
+        Ver Video
+      </button>
+    </div>
+    <div class="container text-center mt-4  ">
+      <button type="button" class="btn btn-primary btn-lg bg-success" data-bs-toggle="modal" data-bs-target="#pdf">
+        Ver documento
+      </button>
+    </div>
+
+    <div class="modal fade" id="video">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Video Informativo</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-TZz_CVKiHY?si=BW4avBmhc3G36n1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger bg-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="pdf" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pdfModalLabel">Visualizador de PDF</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body" style="height:80vh;">
+            <iframe src="archivos/parcial.pdf" width="100%" height="100%" style="border:none;"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal fin-->
+
+      <!--INICIO BOTON OFFCANVAS -->
+      <div id="#conocenos" class="container-fluid mt-3">
+        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#idOffcanvas">
+          Conocenos
+        </button>
+      </div>
+      <!-- FIN BOTON OFFCANVAS -->
+
+    <!-- INICIO CONTENIDO -->
+     
+         <!-- Tarjetas  -->
+        
+         <div class="container mt-5 d-none d-md-block" id="mision">
+          <div class="row align-items-center">
+            <!-- Columna de la imagen -->
+            <div class="col-md-6">
+              <img src="img/pc.jpg" class="img-fluid rounded" alt="Imagen de misión Techylon">
+            </div>
+        
+            <!-- Columna del texto -->
+            <div class="col-md-6">
+              <h5 class="fw-bold">Misión</h5>
+              <p>
+                En Techylon, nuestra misión es transformar ideas en soluciones tecnológicas de alto impacto, desarrollando software a medida que responda con precisión a las necesidades específicas de cada cliente. Nos comprometemos a brindar productos digitales eficientes, seguros y escalables, utilizando tecnologías de vanguardia y metodologías ágiles que permiten adaptarnos rápidamente a los cambios del entorno. Valoramos la colaboración estrecha con nuestros clientes y sus equipos, fomentando relaciones duraderas basadas en la confianza, la transparencia y la mejora continua. Aspiramos a convertirnos en socios tecnológicos estratégicos que impulsan la innovación, la productividad y el crecimiento sostenible en cada organización que atendemos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5 d-none d-md-block" id="vision">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img src="img/img2.png" class="img-fluid rounded" alt="Imagen de visión Techylon">
+            </div>
+        
+            <div class="col-md-6">
+              <h5 class="fw-bold">Visión</h5>
+              <p>
+                Aspiramos a consolidarnos como una empresa referente en el desarrollo de software a nivel nacional e internacional, destacándonos por la excelencia técnica, la creatividad de nuestras soluciones y el compromiso humano que ponemos en cada proyecto. Nuestra visión es liderar la transformación digital de empresas de todos los tamaños y sectores, democratizando el acceso a tecnologías avanzadas que les permitan alcanzar su máximo potencial. Imaginamos un futuro donde Techylon sea sinónimo de innovación confiable, una marca reconocida por su capacidad de anticipar tendencias tecnológicas, adaptarse al cambio constante y generar un impacto positivo en la vida de las personas a través del poder del software bien hecho.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+          <p class="mb-0">Hecho por Luisa Carolina Araque Guillén &copy; 2025</p>
+        </footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+</html>
